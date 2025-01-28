@@ -8,21 +8,26 @@ public class Words
 
 	public Words()
 	{
-
+		wordList = new ArrayList<Word>();
 	}
 
 	public Words(String s)
 	{
+		wordList = new ArrayList<Word>();
 
+		setWords(s);
 	}
 
 	public void setWords(String s)
 	{
 		//Create a Scanner for the list of words in the string "s"
-
+		Scanner chopper = new Scanner(s);
 
 		//Continue to loop while there are more words to read
-
+		while(chopper.hasNext())
+		{
+			wordList.add(new Word(chopper.next()));
+		}
 			//Add objects of the type Word to our ArrayList "wordList"
 
 
@@ -46,7 +51,8 @@ public class Words
 		int vowelCount = 0;
 
 		//for each Word in the ArrayList "words" loop
-
+		for(Word str: wordList)
+			if()
 			//if the Word has "size" characters
 
 

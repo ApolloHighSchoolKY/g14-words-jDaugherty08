@@ -1,0 +1,19 @@
+Public class WordTester
+{
+    Public class void main (String[] args)
+    {
+        Word word = new Word("word");
+
+        System.out.println(word);
+        System.out.println("Num of vowels = " + word.getNumVowels());
+        System.out.println("Length = " + word.getLength());
+
+        Word newWord = new Word("newWord");
+
+        System.out.println(newWord);
+        System.out.println("Num of vowels = " + newWord.getNumVowels());
+        System.out.println("Length = " + newWord.getLength());
+        
+    }
+
+}
