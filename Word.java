@@ -9,7 +9,7 @@ public class Word
 
 	public Word()
 	{
-		word = "word";
+		word = "";
 	}
 
 	public Word(String newWord)
@@ -27,7 +27,9 @@ public class Word
 		int vowelCount = 0;
 
 		for(int i=0; i<word.length(); i++)
-			if(word.substring(i, i+1).indexOf(VOWELS) != -1)
+			//if(word.substring(i, i+1).indexOf(VOWELS) != -1)
+				//vowelCount ++;
+			if(VOWELS.indexOf(word.substring(i, i+1))>-1)
 				vowelCount ++;
 
 		return vowelCount;
